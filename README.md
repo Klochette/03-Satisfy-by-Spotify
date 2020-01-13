@@ -11,7 +11,7 @@ Responsive website to promote a Spotify product we designed
 
 ## Netlify link 
 ```shell
-https://satisfy-by-spotify.netlify.com/
+https://satisfybyspotify.netlify.com/
 ```
 
 
