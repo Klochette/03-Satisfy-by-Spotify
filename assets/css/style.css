@@ -1,0 +1,640 @@
+@font-face {
+  font-family: Circular;
+  src: url("../src/fonts/circular-light.woff2") format("woff2"),
+    url("../src/fonts/circular-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("../src/fonts/circular-book.woff2") format("woff2"),
+    url("../src/fonts/circular-book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("../src/fonts/circular-medium.woff2") format("woff2"),
+    url("../src/fonts/circular-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("../src/fonts/circular-bold.woff2") format("woff2"),
+    url("../src/fonts/circular-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Circular;
+  src: url("../src/fonts/circular-black.woff2") format("woff2"),
+    url("../src/fonts/circular-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@keyframes swipeDown {
+  0% {
+    transform: translateY(0px);
+    opacity: O;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+body {
+  background-color: #0f1013;
+  color: white;
+  font-family: "Circular";
+  font-weight: 300;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: #0f1013;
+  z-index: 4;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  opacity: 1;
+  transition: opacity ease 0.3s;
+  display: inline-block;
+}
+
+header ul {
+  display: none;
+}
+
+.section-hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 16px;
+}
+
+.main-title {
+  flex-grow: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: no-repeat center url("../src/img/img-earphones.png");
+}
+
+.main-title h1 {
+  font-size: 44px;
+  letter-spacing: 0.38em;
+  margin-right: -0.38em;
+  text-transform: uppercase;
+}
+
+.main-title p {
+  color: #43d940;
+  align-self: flex-end;
+}
+
+.main-title p em {
+  font-weight: 400;
+}
+
+.product-description {
+  width: 65%;
+  font-size: 24px;
+  margin-bottom: 50px;
+  margin-top: -200px;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.swipe-down {
+  width: 30px;
+  align-self: center;
+  padding-bottom: 10px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 24px;
+  height: 100vh;
+  background: url("../src/img/satisfy-product-radial.png") no-repeat right;
+}
+
+.product div {
+  width: 50%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.product h2 {
+  margin: 27px 0px;
+}
+
+.product p {
+  font-size: 18px;
+}
+
+.product p em {
+  font-weight: 500;
+}
+
+button {
+  align-self: center;
+  background-color: #43d940;
+  height: 45px;
+  width: 70%;
+  border-radius: 500px;
+  color: white;
+  font-family: "Circular";
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-style: none;
+  letter-spacing: 2px;
+  margin: 30px 0px;
+}
+
+.product button {
+  margin: 5px;
+  height: 50px;
+  font-size: 15px;
+  width: 110%;
+  align-items: center;
+}
+
+.feature-block {
+  background-color: white;
+  color: black;
+  padding: 0 16px 35px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.feature-titles {
+  padding-top: 20px;
+}
+
+.feature-block p {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 26px;
+  padding-top: 15px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.feature-block img {
+  width: 100px;
+  margin-right: 20px;
+  padding: 5px;
+}
+
+.second-feature img {
+  width: 50px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  padding-top: 20px;
+}
+
+.feature p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.pre-order {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: url("../src/img/satisfy-product-2.png") no-repeat center;
+  background-size: cover;
+}
+
+.pre-order h1 {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 71px 20% 10% 20%;
+  text-align: center;
+}
+
+.pre-order p {
+  font-size: 15px;
+  margin-left: 10%;
+  width: 220px;
+  margin-top: 20px;
+  justify-self: flex-start;
+}
+
+.premium-btn {
+  background-color: #3f9ed7;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+}
+
+.pre-order h2 {
+  font-weight: 300;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.pre-order a {
+  margin-bottom: 70px;
+  align-self: flex-start;
+  margin: 10%;
+}
+
+.pre-order button {
+  width: 120%;
+}
+
+/* utility */
+.swipe-down {
+  animation: swipeDown 1s infinite alternate;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
+.display-none {
+  display: none;
+}
+.moveInLeft {
+  animation: moveInLeft 0.5s ease-in-out;
+}
+
+.toAnimate {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.menu-grow {
+  height: 100vh;
+  position: fixed;
+  transition: height 500ms ease;
+}
+.nav-item-is-active::after {
+  width: 50%;
+}
+
+/* Button */
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border-bottom: 1px solid #43d940;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  background-color: #43d940;
+  outline: none;
+  position: relative;
+}
+
+footer {
+  height: 115px;
+  display: flex;
+  font-size: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 15px 15px 15px;
+  color: #919496;
+}
+
+footer div {
+  text-align: right;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+footer ul li:hover {
+  text-decoration: none;
+  color: #1ed760;
+}
+footer p:hover {
+  text-decoration: none;
+  color: #1ed760;
+}
+/* Burger / Croix */
+.icon {
+  padding-top: 15px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger:after {
+  top: 14px;
+}
+.hamburger:after,
+.hamburger:before {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 32px;
+  background: #ffffff;
+  -webkit-transition: transform 500ms cubic-bezier(0, 1, 1, 0.875); /* older webkit */
+  -webkit-transition: transform 500ms cubic-bezier(0, 1.65, 1, 0.875);
+  -moz-transition: transform 500ms cubic-bezier(0, 1.65, 1, 0.875);
+  -o-transition: transform 500ms cubic-bezier(0, 1.65, 1, 0.875);
+  transition: transform 500ms cubic-bezier(0, 1.65, 1, 0.875); /* custom */
+}
+
+.hamburger.menu-opened:before {
+  transform: rotate(45deg);
+  top: 8px;
+  left: 0;
+}
+
+.hamburger.menu-opened:after {
+  transform: rotate(135deg);
+  top: 8px;
+  left: 0;
+}
+
+menu {
+  position: absolute;
+  height: 0px;
+  width: 100%;
+  background-color: #0f1013;
+  z-index: 3;
+  overflow: hidden;
+  transition: height 500ms ease;
+}
+
+menu ul {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 300px;
+  letter-spacing: 0.2em;
+  margin-top: 56px;
+}
+
+menu ul li {
+  margin: 40px 40px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (min-width: 600px) {
+  .section-hero {
+    margin: 0px 32px;
+    height: 100vh;
+  }
+
+  .main-title h1 {
+    font-size: 60px;
+  }
+
+  .product-description {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  .btn:active {
+    transform: translateY(0px);
+    outline: none;
+  }
+
+  .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+    background-color: #43d940;
+  }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+  }
+
+  .product {
+    background: url(../src/img/satisfy-product-radial-big.png) no-repeat right;
+    margin: 0;
+  }
+
+  .product div:nth-child(1) {
+    width: 100%;
+    padding-top: 10%;
+  }
+
+  .product div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0px 15%;
+    justify-content: space-around;
+  }
+
+  .product h2 {
+    margin-left: 10%;
+    margin-bottom: 30px;
+  }
+
+  .product p {
+    margin-left: 20%;
+  }
+
+  .product em {
+    color: #43d940;
+  }
+
+  .product button {
+    margin-bottom: -40px;
+  }
+
+  .feature-block {
+    height: 120vh;
+  }
+
+  .feature-titles {
+    text-align: center;
+  }
+
+  .feature img {
+    margin-right: 5px;
+  }
+
+  .feature article {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+  }
+
+  .second-feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .second-feature article {
+    width: 90%;
+  }
+
+  .pre-order {
+    height: 90vh;
+    justify-content: space-around;
+  }
+
+  .pre-order h2 {
+    display: none;
+  }
+
+  .pre-order p {
+    margin-right: 5%;
+    align-self: flex-end;
+  }
+  .pre-order p:nth-child(4) {
+    display: none;
+  }
+
+  .pre-order p:nth-child(5) {
+    display: none;
+  }
+
+  .pre-order button {
+    width: 300px;
+    align-self: flex-end;
+    margin-right: 5%;
+  }
+
+  .pre-order a {
+    align-self: flex-end;
+    margin-right: 5%;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+
+  footer div {
+    width: 150px;
+  }
+
+  footer p {
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 900px) {
+  .icon {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  header ul {
+    display: flex;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 300px;
+    letter-spacing: 0.3em;
+  }
+
+  header li {
+    margin-left: 50px;
+    position: relative;
+  }
+
+  header li::after {
+    margin-top: 16px;
+    content: "";
+    border-radius: 100px;
+    width: 0%;
+    height: 4px;
+    background-color: #43d940;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease;
+  }
+
+  .first-feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+
+  .feature-block {
+    height: 80vh;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}

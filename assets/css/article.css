@@ -1,0 +1,28 @@
+article div {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.article h1 {
+  margin: auto;
+  margin-top: 71px;
+  font-size: 300%;
+  font-weight: bold;
+  width: 25%;
+}
+
+.article p {
+  margin: 24px;
+}
+
+em {
+  font-weight: 800;
+}
+
+.article button {
+  width: 50%;
+  margin: auto;
+}

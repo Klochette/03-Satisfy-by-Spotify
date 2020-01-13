@@ -1,0 +1,131 @@
+.form-container {
+  height: 564px;
+  margin: auto;
+  margin-top: 100px;
+  background: rgba(255, 255, 255, 0.836);
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.form-container h1 {
+  font-size: 32px;
+  font-weight: 600;
+  display: inline-block;
+  width: 50%;
+  margin: 40px;
+  margin-top: 80px;
+  color: #0f1013;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input:nth-child(1),
+input:nth-child(2) {
+  margin-left: 24px;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 2px;
+  background-color: white;
+  border: none;
+  font-family: inherit;
+  width: 50%;
+  display: block;
+  color: #0f1013;
+}
+input:nth-child(1):invalid + label,
+input:nth-child(2):invalid + label {
+  color: rgb(255, 0, 0);
+}
+
+label:nth-child(1),
+label:nth-child(2) {
+  margin-top: 16px;
+}
+
+input[type="submit"] {
+  background-color: #43d940;
+  height: 45px;
+  width: 70%;
+  border-radius: 500px;
+  color: white;
+  font-family: "Circular";
+  font-size: 16px;
+  text-transform: uppercase;
+  border-style: none;
+  letter-spacing: 2px;
+  margin: 30px 24px;
+}
+
+.form-container label {
+  margin: 8px 16px;
+  margin-left: 24px;
+}
+
+/* dekstop */
+
+@media (min-width: 600px) {
+  .form-container {
+    width: 80%;
+    height: 564px;
+    margin: auto;
+    margin-top: 100px;
+    background-image: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.836) 0%,
+        rgba(255, 255, 255, 0.836) 50%,
+        transparent 50%
+      ),
+      url("../src/img/form-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
+
+/* mobile */
+
+@media (max-width: 600px) {
+  .form-container h1 {
+    margin: 10% auto;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+  }
+  form {
+    margin: auto;
+    width: 70%;
+  }
+  form div {
+    width: 80%;
+  }
+  input:nth-child(1),
+  input:nth-child(2) {
+    margin: auto;
+    width: 100%;
+  }
+
+  label:nth-child(1),
+  label:nth-child(2) {
+    margin-top: 16px auto;
+    text-align: center;
+  }
+  input[type="submit"] {
+    margin: 30px auto;
+    width: 100%;
+    font-size: 12px;
+  }
+}
