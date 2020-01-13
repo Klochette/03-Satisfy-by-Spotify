@@ -1,4 +1,4 @@
-# hetic-w1p2022-05 / Satisfy by Spotify
+Satisfy by Spotify
 Responsive website to promote a Spotify product we designed
 
 ## Group Members
