@@ -1,4 +1,4 @@
-#Satisfy by Spotify
+# Satisfy by Spotify
 Responsive website to promote a Spotify product we designed
 
 ## Group Members
