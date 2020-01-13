@@ -10,8 +10,6 @@ Responsive website to promote a Spotify product we designed
 - Quentin Grancher
 
 ## Netlify link 
-```shell
-https://satisfybyspotify.netlify.com/
-```
+[satisfybyspotify.netlify.com](https://satisfybyspotify.netlify.com/)
 
 
