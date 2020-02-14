@@ -2,12 +2,12 @@
 Responsive website to promote a Spotify product we designed
 
 ## Group Members
-- Arnaud Dumarché
-- Melvyn Dadure
-- Louis Fleury
-- Yannis Jebali
-- Melina Chamayou
-- Quentin Grancher
+- Melina Chamayou - Integration
+- Quentin Grancher - JavaScript
+- Arnaud Dumarché - Design
+- Melvyn Dadure - Design
+- Louis Fleury - Design
+- Yannis Jebali - Presentation
 
 ## Netlify link 
 [satisfybyspotify.netlify.com](https://satisfybyspotify.netlify.com/)
