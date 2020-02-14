@@ -1,5 +1,5 @@
 # Satisfy by Spotify
-Création d'un objet innovant, et developpement de sa page vitrine.
+Création d'un objet innovant, création et développement de son site vitrine.
 
 - temps imparti : 
   - 4 jours de développement
