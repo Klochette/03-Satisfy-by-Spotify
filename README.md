@@ -1,7 +1,12 @@
 # Satisfy by Spotify
-Responsive website to promote a Spotify product we designed
+Création d'un objet innovant, et developpement de sa page vitrine.
 
-## Group Members
+- temps imparti : 
+  - 4 jours de développement
+  - 10 minutes de soutenance
+
+
+## Membres du groupe
 - Melina Chamayou - Integration
 - Quentin Grancher - JavaScript
 - Arnaud Dumarché - Design
@@ -9,7 +14,7 @@ Responsive website to promote a Spotify product we designed
 - Louis Fleury - Design
 - Yannis Jebali - Presentation
 
-## Netlify link 
+## Page web 
 [satisfybyspotify.netlify.com](https://satisfybyspotify.netlify.com/)
 
 
