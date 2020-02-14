@@ -16,5 +16,3 @@ Création d'un objet innovant, création et développement de son site vitrine.
 
 ## Page web 
 [satisfybyspotify.netlify.com](https://satisfybyspotify.netlify.com/)
-
-
